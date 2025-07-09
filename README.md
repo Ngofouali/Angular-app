@@ -1,59 +1,24 @@
-# AngularApp
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<h1>Application angular de gestion des produits</h1>
+<img src="captures/application.png">
+<h3><p>Ce projet est une application web complète de gestion de produits développée avec Angular. C'est un projet d'apprentissage du framework Angular dans sa version 19. Il couvre l'ensemble des étapes de la création d'une application, de la configuration initiale au déploiement d'une structure fonctionnelle et maintenable.
+L'application utilise Bootstrap 5 pour un design moderne et responsive, et simule un backend avec un service Angular sans avoir besoin d'une API externe.</p></h3>
+<h3>1. Création du projet Angular</h3>
+<img src="captures/creation-projet.png">
+<br/>
+<h4>Structure du projet</h4>
+<img src="captures/structure-projet.png">
+<br/>
+<h3>2. Test de lancement de l'application avec " ng serve "</h3>
+<img src="captures/lancement-app.png">
+<h3>3. Création du composant product-list.component</h3>
+<img src="captures/composant-product-list.png">
+<ul>
+<li><h4></h4></li>
+<img src="captures/TestDao.png">
+<li><h4>Test</h4></li>
+<img src="captures/Test.png">
+<li><h4>Test de connexion à la base H2 Database</h4></li>
+<img src="captures/connexion-H2.png">
+<img src="captures/conx.png">
+<img src="captures/Test-enregistrements.png">
+</ul>
