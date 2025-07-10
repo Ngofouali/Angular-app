@@ -1,0 +1,55 @@
+<div class="container mt-4">
+  <h2>{{isEditMode ? 'Modifier le produit' : 'Ajouter un produit'}}</h2>
+
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nom du produit</label>
+      <input type="text" id="name" class="form-control" formControlName="name">
+      @if (name?.invalid && (name?.dirty || name?.touched)) {
+        <div class="text-danger mt-1">
+          @if (name?.errors?.['required']){
+            <div>Le nom est requis</div>
+          }
+          @if (name?.errors?.['minlengh']) {
+            <div>Le nom doit faire au moins 3 caractères</div>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Prix</label>
+      <input type="number" id="price" class="form-control" formControlName="price">
+      @if (price?.invalid && (price?.dirty || price?.touched)) {
+        <div class="text-danger mt-1">
+          @if (name?.errors?.['required']){
+            <div>Le prix est requis</div>
+          }
+          @if (name?.errors?.['minlengh']) {
+            <div>Le prix doit être positif</div>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Stock</label>
+      <input type="number" id="stock" class="form-control" formControlName="stock">
+      @if (stock?.invalid && (stock?.dirty || stock?.touched)) {
+        <div class="text-danger mt-1">
+          @if (name?.errors?.['required']){
+            <div>Le stock est requis</div>
+          }
+          @if (name?.errors?.['minlengh']) {
+            <div>Le stock ne peut être positif</div>
+          }
+        </div>
+      }
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2" [disabled]="productForm.invalid">
+      {{isEditMode ? 'Modifier' : 'Ajouter'}}
+    </button>
+    <a routerLink="/products" class="btn btn-danger">Annuler</a>
+  </form>
+</div>
