@@ -13,12 +13,22 @@ L'application utilise Bootstrap 5 pour un design moderne et responsive, et simul
 <h3>3. Création du composant product-list.component</h3>
 <img src="captures/composant-product-list.png">
 <ul>
-<li><h4></h4></li>
-<img src="captures/TestDao.png">
-<li><h4>Test</h4></li>
-<img src="captures/Test.png">
-<li><h4>Test de connexion à la base H2 Database</h4></li>
-<img src="captures/connexion-H2.png">
-<img src="captures/conx.png">
-<img src="captures/Test-enregistrements.png">
+<li>product-list.component.ts</li>
+<img src="captures/product-list.C.png">
+<li>product-list.component.html</li>
+<img src="captures/product-list.component.html.png">
 </ul>
+<br/>
+<h3>4. Création du composant product-form.component</h3>
+<img src="captures/composant-product-form.png">
+<br/>
+<img src="captures/structure02.png">
+<ul>
+<li>product-form.component.ts</li>
+<img src="captures/product-form.component.png">
+<br>
+<li>product-form.component.html</li>
+<img src="captures/product-form.component.html.png">
+</ul>
+<br>
+<img src="captures/test-product-form.component.png">
